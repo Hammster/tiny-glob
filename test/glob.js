@@ -224,3 +224,11 @@ test('glob: options.filesOnly (without glob)', async t => {
     'test/fixtures/one',
   ]);
 });
+
+test('glob: deep match with higher level siblings', async t => {
+  t.plan(1);
+
+  await isMatch(t, 'test/fixtures/deep/*/c/d', {}, [
+    'test/fixtures/deep/b/c/d'
+  ]);
+});
