@@ -27,7 +27,7 @@
   "repository": "https://github.com/terkelg/tiny-glob",
   "license": "MIT",
   "dependencies": {
-    "globalyzer": "^0.1.0",
+    "globalyzer": "terkelg/globalyzer#fix/trim-leading",
     "globrex": "^0.1.1"
   },
   "devDependencies": {
